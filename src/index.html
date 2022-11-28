@@ -89,5 +89,11 @@
         </div>
       </div>
     </div>
+    <script>
+      let hot = Array.from(document.querySelectorAll('.hot'));
+      for(let element of hot){
+        element.textContent = String.fromCodePoint(0x1F525) + element.textContent;
+      }
+    </script>
   </body>
 </html>
